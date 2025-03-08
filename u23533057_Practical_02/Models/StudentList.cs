@@ -18,7 +18,7 @@ namespace u23533057_Practical_02.Models
         public string LastName { get; set; }
 
         [Display(Name = "Email Address")]
-        public int EmailAddress { get; set; }
+        public string EmailAddress { get; set; }
 
         [Display(Name = "Link to personal page")]
         public string myLink { get; set; }
