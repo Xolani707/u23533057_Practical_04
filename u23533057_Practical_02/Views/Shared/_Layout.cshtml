@@ -6,20 +6,35 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="../Content/Site.css" rel="stylesheet" />
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Simple starting page", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                List of People
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/Student/StudentsList">Complete List of People</a></li>
+                                <li><a class="dropdown-item" href="~/HTML/Xolani.html">Xolani</a></li>
+                                <li><a class="dropdown-item" href="~/HTML/Unathi.html">Unathi</a></li>
+                                <li><a class="dropdown-item" href="~/HTML/Sihle.html">Sihle</a></li>
+                                <li><a class="dropdown-item" href="~/HTML/Khensani.html">Khensani</a></li>
+                                <li><a class="dropdown-item" href="~/HTML/Makgoshi.html">Makgoshi</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -33,7 +48,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
