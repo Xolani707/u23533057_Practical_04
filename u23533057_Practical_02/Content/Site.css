@@ -68,20 +68,24 @@ body>div{
     margin-top: 20px;
 }
 
-.row img{
+.row1 img{
     float: left;
 }
 
 .row img, .row p{
-    height: 20px;
+    height: 200px;
 }
 
-.row img.hover {
+.row img:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
-.side-by-side {
+.row2 img{
+    float: right;
+}
+
+.side-by-side{
     display: flex;
 }
 
@@ -91,4 +95,15 @@ body>div{
     justify-content: space-between;
     text-align: center;
     margin-right: 700px;
+    margin-top: 20px;
+}
+
+
+.main-content .row3{
+    height: 590px;
+}
+
+p {
+    text-align: center;
+    white-space: normal;
 }
