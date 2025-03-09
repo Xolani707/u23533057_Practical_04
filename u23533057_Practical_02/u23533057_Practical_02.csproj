@@ -121,9 +121,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\StudentsList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +148,22 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HTML\Images\braden-collum-9HI8UJMSdZA-unsplash.jpg" />
+    <Content Include="HTML\Images\connor-coyne-OgqWLzWRSaI-unsplash.jpg" />
+    <Content Include="HTML\Images\edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" />
+    <Content Include="HTML\Images\janko-ferlic-sfL_QOnmy00-unsplash.jpg" />
+    <Content Include="HTML\Images\kourosh-qaffari-RrhhzitYizg-unsplash.jpg" />
+    <Content Include="HTML\Images\paul-green-gOHfFgwyDNM-unsplash.jpg" />
+    <Content Include="HTML\Images\sincerely-media-CXYPfveiuis-unsplash.jpg" />
+    <Content Include="HTML\Images\sincerely-media-nGrfKmtwv24-unsplash.jpg" />
+    <Content Include="HTML\Images\studio-media-9DaOYUYnOls-unsplash.jpg" />
+    <Content Include="HTML\Images\vince-fleming-aZVpxRydiJk-unsplash.jpg" />
+    <Content Include="HTML\Images\yaron-richman-uZmr0wwfHNA-unsplash.jpg" />
+    <Content Include="HTML\Person 05.html" />
+    <Content Include="HTML\Person 01.html" />
+    <Content Include="HTML\Person 02.html" />
+    <Content Include="HTML\Person 04.html" />
+    <Content Include="HTML\Person 03.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -177,10 +195,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Student\StudentsList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
