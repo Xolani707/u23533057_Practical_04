@@ -25,7 +25,7 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Xolani",
                     LastName = "Tobo",
                     EmailAddress = "u23533057@tuks.co.za",
-                    myLink = "~/HTML/Xolani.html"
+                    myLink = "~/HTML/Person 01.html"
                 },
 
                 new StudentsList()
@@ -34,7 +34,7 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Unathi",
                     LastName = "Mokgoetsi",
                     EmailAddress = "u23552311@tuks.co.za",
-                    myLink = "~/HTML/Unathi.html"
+                    myLink = "~/HTML/Person 02.html"
                 },
 
                 new StudentsList()
@@ -43,7 +43,7 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Sihle",
                     LastName = "Shange",
                     EmailAddress = "u22626752@tuks.co.za",
-                    myLink = "~/HTML/Sihle.html"
+                    myLink = "~/HTML/Person 03.html"
                 },
 
                 new StudentsList()
@@ -52,7 +52,7 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Khensani",
                     LastName = "Nkwinika",
                     EmailAddress = "u23534134@tuks.co.za",
-                    myLink = "~/HTML/Khensani.html"
+                    myLink = "~/HTML/Person 04.html"
                 },
 
                 new StudentsList()
@@ -61,7 +61,7 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Makgoshi",
                     LastName = "Mariri",
                     EmailAddress = "u23583569@tuks.co.za",
-                    myLink = "~/HTML/Makgoshi.html"
+                    myLink = "~/HTML/Person 05.html"
                 },
 
             };
