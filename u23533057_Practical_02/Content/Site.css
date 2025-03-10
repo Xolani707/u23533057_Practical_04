@@ -100,10 +100,21 @@ body>div{
 
 
 .main-content .row3{
-    height: 590px;
+    height: 200px;
 }
 
 p {
     text-align: center;
     white-space: normal;
 }
+
+
+th {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
