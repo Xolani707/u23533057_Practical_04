@@ -3,66 +3,99 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="../Content/Site.css" rel="stylesheet" />
+    
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    
+    <style>
+       
+        li{
+            list-style: none;
+        }
+        li a{
+            color: rgba(10, 10, 10)
+        }
+        body{
+            background-color: darkseagreen;
+        }
+        .active {
+            background-color: lightgrey;
+        }
+        .display-6 img:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+       
+
+    </style>
 </head>
 <body>
-    <div class="main-content">
-        <h2>Person 01 - Xolani Tobo</h2>
-        <hr />
 
-        <div class="links">
-            <div class="p-2"><a href="">MAIN</a></div>
-            <div class="p-2"><a href="/Student/StudentsList">LIST</a></div>
-            <div class="active"><a href="..//HTML/Person 01.html">Person 01</a></div>
-            <div class="p-2"><a href="../HTML/Person 02.html">Person 02</a></div>
-            <div class="p-2"><a href="../HTML/Person 03.html">Person 03</a></div>
-            <div class="p-2"><a href="../HTML/Person 04.html">Person 04</a></div>
-            <div class="p-2"><a href="../HTML/Person 05.html">Person 05</a></div>
-            <div><a href="javascript:history.back()">BACK</a></div>
-        </div>
-        <hr />
-        <div class="row row1">
-            <h2>Biography and Background</h2>
-            <img src="../HTML/Images/hawkeye.png" />
-            <p>
-                Xolani Tobo was born in Johannesburg, Gauteng Province, and went to school in Alexandra, which is situated in Johannesburg, Gauteng. He studies Bcom Informatics because he loves and belives in the tech world as the future of tomorrow.
-            </p>
-        </div>
+    
+          <div class="container">
+             <h1 id="firstHeading">Person 01 - Xolani Tobo</h1>
+             <hr id="hr_header" class="bg-light text-white" style="height:2px"/>
 
-        <div class="row row2">
-            <h2>Hobbies</h2>
-            <div class="side-by-side">
-                <p>
-                    Xolani Tobo enjoys playing football as his hobby, he also enjoys watching football whenever he gets a chance.
-                </p>
-                <img src="../HTML/Images/peter-parker-Cropped.png" />
-            </div>
-        </div>
+             <ul class="row bg-light menu " style="font-size:20px; border-radius: 10px">
+                 <li class="col p-3"><a style="text-decoration: none;"href="">MAIN</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="/Student/StudentsList">LIST</a></li>
+                 <li class="col active p-3"><a style="text-decoration: none;"href="..//HTML/Person 01.html">Person 01</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="../HTML/Person 02.html">Person 02</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="../HTML/Person 03.html">Person 03</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="../HTML/Person 04.html">Person 04</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="../HTML/Person 05.html">Person 05</a></li>
+                 <li class="col p-3"><a style="text-decoration: none;"href="javascript:history.back()">BACK</a></li>
+             </ul>
+          </div>
 
-            <div class="row row3">
-                <h2>Modules</h2>
-                <div class="modules">
-                    <table>
-                        <tr>
-                            <th>Module Semester 1</th>
-                            <th>Module Semester 2</th>
-                        </tr>
-                        <tr>
-                            <td>BER 210</td>
-                            <td>OBS 210</td>
-                        </tr>
-                        <tr>
-                            <td>INF 214</td>
-                            <td>WST 212</td>
-                        </tr>
-                        <tr>
-                            <td>INF 272</td>
-                            <td>INF 271</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+                <div class="row bg-light">
+                    <div class="col-md-4 mb-4 column pt-5 card h-100 p-6">
+ 
+                            
+                                <h2 class="display-6">Biography and Background</h2>
 
-    </div>
+                                <img src="../HTML/Images/Wanda-Scarlet-Witch-Cropped.png" />
+                                <p>
+                                    Xolani Tobo was born in Johannesburg, Gauteng Province, and went to school in East Bank High which is situated in Johannesburg, Gauteng. He studies Bcom Informatics because he loves coding and working with computer-based problems.
+                                </p>
+                            </div>
+                    
+                            <div class="col-md-4 mb-4 column pt-5 card h-100 p-4">
+                                <h2 class="display-6">Hobbies</h2>
+                                <img src="../HTML/Images/tony-stark-iron-man.png" />
+                                <p>
+                                    Xolani Tobo enjoys playing football as his hobby, he also enjoys going out to have fun in outdoors events, like parties and sports events.
+                                </p>
+
+
+                            </div>
+
+                            <div class="col-md-4 mb-4 column pt-5 card h-100 p-4">
+                                <h2 class="display-6">Modules</h2>
+
+                                <table>
+                                    <tr>
+                                        <th>Module Semester 1</th>
+                                        <th>Module Semester 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>BER 210</td>
+                                        <td>OBS 210</td>
+                                    </tr>
+                                    <tr>
+                                        <td>INF 214</td>
+                                        <td>WST 212</td>
+                                    </tr>
+                                    <tr>
+                                        <td>INF 272</td>
+                                        <td>INF 271</td>
+                                    </tr>
+                                </table>
+
+
+                            </div>
+              </div>
+             
+          <script src="../Scripts/jquery-3.7.0.js"></script>
+         <script src="../Scripts/bootstrap.js"></script>
 </body>
 </html>
