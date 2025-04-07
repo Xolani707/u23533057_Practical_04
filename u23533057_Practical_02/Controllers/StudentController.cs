@@ -25,7 +25,8 @@ namespace u23533057_Practical_02.Controllers
                     FirstName = "Xolani",
                     LastName = "Tobo",
                     EmailAddress = "u23533057@tuks.co.za",
-                    myLink = "~/HTML/Person 01.html"
+                    myLink = "~/HTML/Person 01.html",
+                   
                 },
 
                 new StudentsList()
