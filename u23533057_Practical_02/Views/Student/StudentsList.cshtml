@@ -12,23 +12,27 @@
 </style>
 
 
-<table class="table">
-    <tr>
-        <th>
+<table class="table table-bordered">
+    <tr style="background-color: darkgreen; color: white; ">
+        <th width="20%">
             @Html.DisplayNameFor(model => model.StudentNumber)
         </th>
-        <th>
+        <th width="20%">
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
-        <th>
+        <th width="20%">
             @Html.DisplayNameFor(model => model.LastName)
         </th>
-        <th>
+        <th class="text-center" width="20%">
             @Html.DisplayNameFor(model => model.EmailAddress)
         </th>
-        <th>
+        <th class="text-center" width="20%">
             @Html.DisplayNameFor(model => model.myLink)
         </th>
+        <th class="text-center" width="20%">
+            Delete
+        </th>
+
     </tr>
 
 @foreach (var item in Model) {
@@ -46,10 +50,44 @@
             @Html.DisplayFor(modelItem => item.EmailAddress)
         </td>
         <td>
-            <a href="@Url.Content(item.myLink)">LINK</a>
+            <a href="@Url.Content(item.myLink)" class="btn btn-success">LINK</a>
         </td>
-       
+        <td>
+           <button class="delete btn btn-success">DELETE</button>
+        </td>
+
     </tr>
 }
 
 </table>
+
+@section Scripts{
+<script>
+    // Select all delete buttons in the table
+    const buttons = document.querySelectorAll(".delete");
+
+    // Add event listeners to each delete button
+    buttons.forEach((button) => {
+        button.onclick = function () {
+            // Find the parent row (tr) of the clicked button
+            const row = button.parentNode.parentNode;
+
+            // Remove the row from the table
+            row.remove();
+        };
+    });
+
+
+    //select table
+    const table = document.querySelector("table");
+    const rows = table.rows;
+    console.log(rows);
+    //loop through rows
+    for (let i = 0; i < rows.length; i++) {
+        //selec name that starts with a respective letter
+        if (rows[i].cells[i].textContent.trim()[0] === "X") {
+            rows[i].classList.add("text-danger")
+        }
+    }
+</script>
+}
