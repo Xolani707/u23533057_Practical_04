@@ -1,0 +1,125 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body {
+    background-color: #A8CD89;
+}
+
+.main-content {
+    background-color: #A3D1C6;
+    padding: 40px 20px 40px 20px;
+}
+
+.links {
+    display: flex;
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+}
+
+    .links div {
+        border-right: solid grey 1px;
+        padding: 20px;
+        font-size: larger;
+    }
+
+        .links div:last-child {
+            flex: 1;
+        }
+
+body > div {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    background-color: lightgrey;
+}
+
+.main-content .row {
+    border: solid green 1px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row1 img {
+    float: left;
+}
+
+.card img, .card p {
+    height: 200px;
+}
+
+.column img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.row2 img {
+    float: right;
+}
+
+.side-by-side {
+    display: flex;
+}
+
+
+.modules {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 700px;
+    margin-top: 20px;
+}
+
+
+.main-content .row3 {
+    height: 200px;
+}
+
+p {
+    text-align: center;
+    white-space: normal;
+}
+
+
+th {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.active {
+    background-color: grey;
+}
+
+.col-md-4.card.h-100 {
+    border: solid grey 2px;
+    margin: 5px;
+}
