@@ -22,5 +22,6 @@ namespace u23533057_Practical_02.Models
 
         [Display(Name = "Link to personal page")]
         public string myLink { get; set; }
+
     }
 }
