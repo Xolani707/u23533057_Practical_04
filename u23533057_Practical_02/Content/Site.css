@@ -58,7 +58,7 @@ body>div{
 }
 
 .active {
-    background-color: green;
+    background-color: lightgrey;
 }
 
 .main-content .row{
@@ -72,11 +72,11 @@ body>div{
     float: left;
 }
 
-.row img, .row p{
+.card img, .card p{
     height: 200px;
 }
 
-.row img:hover {
+.column img:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -116,5 +116,13 @@ th {
     text-align: center;
 }
 
+.active {
+    background-color: grey;
+}
+
+.col-md-4.card.h-100 {
+    border: solid grey 2px;
+    margin: 5px;
+}
 
 
