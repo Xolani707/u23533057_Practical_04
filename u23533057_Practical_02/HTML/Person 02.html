@@ -3,66 +3,92 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="../Content/Site.css" rel="stylesheet" />
+   
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/MyStyle.css" rel="stylesheet" />
+    <style>
+        li {
+            list-style: none;
+        }
+
+            li a {
+                color: rgba(10, 10, 10)
+            }
+
+        body {
+            background-color: darkseagreen;
+        }
+        .active {
+            background-color: lightgrey;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="main-content">
-        <h2>Person 02 - Unathi Mokgoetsi</h2>
-        <hr />
+    <div class="container">
+        <h1 id="firstHeading">Person 02 - Unathi Mokgoetsi</h1>
+        <hr id="hr_header" class="bg-light text-white" style="height:2px" />
 
-        <div class="links">
-            <div class="p-2"><a href="">MAIN</a></div>
-            <div class="p-2"><a href="/Student/StudentsList">LIST</a></div>
-            <div ><a href="..//HTML/Person 01.html">Person 01</a></div>
-            <div class="active"><a href="../HTML/Person 02.html">Person 02</a></div>
-            <div class="p-2"><a href="../HTML/Person 03.html">Person 03</a></div>
-            <div class="p-2"><a href="../HTML/Person 04.html">Person 04</a></div>
-            <div class="p-2"><a href="../HTML/Person 05.html">Person 05</a></div>
-            <div><a href="javascript:history.back()">BACK</a></div>
-        </div>
-        <hr />
-        <div class="row row1">
-            <h2>Biography and Background</h2>
-            <img src="../HTML/Images/black-widow-1.png" />
-            <p>
-                Unathi Mokgoetsi was born in Mahikeng, North West Province, and went to school in Mahikeng, which is situated in Mahikeng, Gauteng. She studies Bcom Statistics and Data Science because she wishes to, one day, be a Data Scientist.
+        <ul class="row bg-light menu " style="font-size:20px; border-radius: 10px">
+            <li class="col p-3"><a style="text-decoration: none;" href="">MAIN</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="/Student/StudentsList">LIST</a></li>
+            <li class="col active p-3"><a style="text-decoration: none;" href="..//HTML/Person 01.html">Person 01</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="../HTML/Person 02.html">Person 02</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="../HTML/Person 03.html">Person 03</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="../HTML/Person 04.html">Person 04</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="../HTML/Person 05.html">Person 05</a></li>
+            <li class="col p-3"><a style="text-decoration: none;" href="javascript:history.back()">BACK</a></li>
+        </ul>
+        <div class="card mt-4">
+            <h2 class="card-header">Biography and Background</h2>
+
+            <p class="card-body">
+                <img src="../HTML/Images/black-widow-1.png" />
+                Unathi Mokgoetsi was born in Mahikeng, North West Province, she studies Bcom Statistics and Data Science at the UP.
             </p>
         </div>
 
-        <div class="row row2">
-            <h2>Hobbies</h2>
-            <div class="side-by-side">
-                <p>
-                    Unathi Mokgoetsi enjoys playing tennis as her hobby, she also enjoys staying indoors and watching movies in her freetime.
-                </p>
+        <div class="card mt-4">
+            <h2 class="card-header">Hobbies</h2>
+
+
+            <p class="card-body">
                 <img src="../HTML/Images/Don-cheadle-as-rhodey-Cropped.png" />
-            </div>
+                Unathi Mokgoetsi enjoys playing tennis as her hobby, she also enjoys staying indoors and watching movies.
+            </p>
+
+
+
         </div>
 
-            <div class="row row3">
-                <h2>Modules</h2>
-                <div class="modules">
-                    <table>
-                        <tr>
-                            <th>Module Semester 1</th>
-                            <th>Module Semester 2</th>
-                        </tr>
-                        <tr>
-                            <td>STK 210</td>
-                            <td>INF 272</td>
-                        </tr>
-                        <tr>
-                            <td>INF 214</td>
-                            <td>WST 212</td>
-                        </tr>
-                        <tr>
-                            <td>STK 220</td>
-                            <td>INF 271</td>
-                        </tr>
-                    </table>
-                </div>
+        <div class="card mt-4">
+            <h2 class="card-header">Modules</h2>
+
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <th>Module Semester 1</th>
+                        <th>Module Semester 2</th>
+                    </tr>
+                    <tr>
+                        <td>STK 210</td>
+                        <td>INF 272</td>
+                    </tr>
+                    <tr>
+                        <td>INF 214</td>
+                        <td>WST 212</td>
+                    </tr>
+                    <tr>
+                        <td>STK 220</td>
+                        <td>INF 271</td>
+                    </tr>
+                </table>
             </div>
 
+        </div>
+
     </div>
+    <script src="../Scripts/jquery-3.7.0.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
 </body>
 </html>
